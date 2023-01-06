@@ -29,8 +29,10 @@ header{
     
     padding:10px;
     border-radius:10px;
-    box-shadow:  5px 5px 5px -1px rgba(255, 3, 3, 0.16),
-             -5px -5px 5px -1px rgba(255, 255, 255, 0.281);
+    /* box-shadow:  5px 5px 5px -1px rgba(7, 65, 110, 0.445),
+             -5px -5px 5px -1px rgba(255, 255, 255, 0.281); */
+    box-shadow:  5px 5px 5px -1px rgba(5, 50, 85, 0.267),
+             -5px -5px 5px -1px rgba(255, 255, 255, 0.226);
 }
 
 .hamburger{
@@ -47,20 +49,22 @@ header{
     font-size: 15px;
     padding: 10px 25px;
     border-radius: 50px;
-    transition: 0.2s;
+    transition: 0.1s;
     margin: 0 5px;
+    box-shadow:  5px 5px 5px -1px rgba(7, 65, 110, 0.137),
+             -5px -5px 5px -1px rgba(255, 255, 255, 0.11);
 }
 
 .nav-bar ul li a:hover{
     color: #11101b;
-    background: #fefefe;
-    box-shadow: inset 5px 5px 5px -1px rgba(169, 10, 10, 0.16),
-                inset -5px -5px 5px -1px rgba(255, 255, 255, 0.70);
+    background: #ebeef1;
+    box-shadow: inset 5px 5px 5px -1px rgba(5, 48, 78, 0.315),
+                inset -5px -5px 5px -1px rgb(255, 255, 255);
 }
 
 .nav-bar ul li a.active{
     color: #11101b;
-    background: #fefefe;
-    box-shadow: inset 5px 5px 5px -1px rgba(169, 10, 10, 0.16),
-                inset -5px -5px 5px -1px rgba(255, 255, 255, 0.70);
+    background: #ebeef1;
+    box-shadow: inset 5px 5px 5px -1px rgba(5, 48, 78, 0.315),
+                inset -5px -5px 5px -1px rgb(255, 255, 255);
 }
