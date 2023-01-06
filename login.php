@@ -23,7 +23,7 @@ if(isset($_POST["submit"])){
   }
   else{
     echo
-    "<script> alert('User Not Registered'); </script>";
+    "<script> alert('User Not Registered.'); </script>";
   }
 }
 ?>
