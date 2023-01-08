@@ -42,30 +42,30 @@ if(isset($_POST["submit"])){
     <link rel="stylesheet" href="css/navbarstyle.css">
   </head>
   <body>
-  <header>
-        <div class="logo">MCE Portal</div>
+    <header>
+      <div class="logo">MCE Portal</div>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
         <nav class="nav-bar">
-            <ul>
+          <ul>
                 <li>
                     <a href="" class="active">Home</a>
                 </li>
                 <li>
-                    <a href="">Link 1</a>
+                    <a href="">Schedule</a>
                 </li>
                 <li>
-                    <a href="">Link 2</a>
+                    <a href="grievance.php">Grievance</a>
                 </li>
                 <li>
-                    <a href="">Link 3</a>
+                    <a href="">About</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="">Link 4</a>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </header>

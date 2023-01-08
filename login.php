@@ -33,9 +33,37 @@ if(isset($_POST["submit"])){
     <meta charset="utf-8">
     <title>Login</title>
     <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="css/navbarstyle.css">
   </head>
   <body>
-  <div class="container">
+    <header>
+      <div class="logo">MCE Portal</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="">Schedule</a>
+                </li>
+                <li>
+                    <a href="grievance.php">Grievance</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <!-- <li>
+                    <a href="">Link 4</a>
+                </li> -->
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
       <div class="card">
         <div class="inner-box">
           <div class="card-front">

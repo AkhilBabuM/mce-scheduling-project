@@ -16,10 +16,42 @@ else{
   <head>
     <meta charset="utf-8">
     <title>Index</title>
+    <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="css/navbarstyle.css">
+    
   </head>
   <body>
-    <h1>Welcome <?php echo $row["Name"]; ?></h1>
-    <a href="logout.php">Logout</a>
-    <a href="grievance.php">Grievance Form</a>
+  <header>
+      <div class="logo">MCE Portal</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="">Schedule</a>
+                </li>
+                <li>
+                    <a href="grievance.php">Grievance</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="logout.php">LOGOUT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+      <h1>Welcome <?php echo $row["Name"]; ?></h1> 
+    </div>
+    
+    <script src="js/navbar.js"></script>
   </body>
 </html>
