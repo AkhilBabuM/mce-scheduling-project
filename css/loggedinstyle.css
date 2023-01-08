@@ -1,7 +1,7 @@
 *{
-    font-family: sans-serif;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 .container{
@@ -46,8 +46,23 @@ h2{
 
 .input-box{
     width:100%;
-    background:transparent;
+    background:White;
     border: transparent;
+    box-shadow: inset 5px 5px 5px -1px rgba(10, 99, 169, 0.16),
+                inset -5px -5px 5px -1px rgba(255, 255, 255, 0.70); 
+    margin: 8px 0;
+    height: 39px;
+    border-radius: 7px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    outline:none;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+
+textarea{
+    /* width:100%;
+    
     box-shadow: inset 5px 5px 5px -1px rgba(10, 99, 169, 0.16),
                 inset -5px -5px 5px -1px rgba(255, 255, 255, 0.70); 
     margin: 8px 0;
@@ -56,10 +71,22 @@ h2{
     padding: 0 12px;
     box-sizing: border-box;
     outline:none;
+    
+    color:rgb(0, 0, 0); */
+
+    width:100%;
+    border: transparent;
+    border-radius: 7px;
+    box-shadow: inset 5px 5px 5px -1px rgba(10, 99, 169, 0.16),
+                inset -5px -5px 5px -1px rgba(255, 255, 255, 0.70);
+    margin-bottom: 20px;
     text-align: center;
-    color:rgb(0, 0, 0);
+    padding: 5px;
 }
 
+label{
+    color:#08375c;
+}
 ::placeholder{
     color:#9ba8b3;
     font-size:15px;
