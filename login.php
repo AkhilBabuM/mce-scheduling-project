@@ -32,8 +32,11 @@ if(isset($_POST["submit"])){
   <head>
     <meta charset="utf-8">
     <title>Login</title>
+
+    <link rel="stylesheet" href="css/preloginstyle.css">
     <link rel="stylesheet" href="css/loginstyle.css">
     <link rel="stylesheet" href="css/navbarstyle.css">
+    
   </head>
   <body>
     <header>
