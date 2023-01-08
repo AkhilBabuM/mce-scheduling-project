@@ -16,6 +16,7 @@ else{
   <head>
     <meta charset="utf-8">
     <title>Index</title>
+    <link rel="stylesheet" href="css/preloginstyle.css">
     <link rel="stylesheet" href="css/loginstyle.css">
     <link rel="stylesheet" href="css/navbarstyle.css">
     
