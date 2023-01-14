@@ -2,7 +2,7 @@
 require 'config.php';
 session_start();
 if(!empty($_SESSION["usn"])){
-  header("Location: index.php");
+  header("Location: index1.php");
 }
 if(isset($_POST["submit"])){
   $name = $_POST["name"];
@@ -23,12 +23,10 @@ if(isset($_POST["submit"])){
       mysqli_query($conn, $query);
      
       header("Location: login.php");
-      echo
-      "<script> alert('Registration Successful'); </script>";
+      echo "<script> alert('Registration Successful'); </script>";
     }
     else{
-      echo
-      "<script> alert('Password Does Not Match'); </script>";
+      echo "<script> alert('Password Does Not Match'); </script>";
     }
   }
 }
