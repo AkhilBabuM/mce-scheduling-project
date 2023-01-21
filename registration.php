@@ -88,14 +88,41 @@ if(isset($_POST["submit"])){
               
               <input type="email" name="email" id="email" class="input-box" placeholder="Enter your Email" required value=""> <br>
               
-              <input type="text" name="branch" id="branch" class="input-box" placeholder="Enter Branch (eg. CSE)" required value=""> <br>
+              <!-- <input type="text" name="branch" id="branch" class="input-box" placeholder="Enter Branch (eg. CSE)" required value=""> <br> -->
+
+              <div class="select">
+                <select name="branch" id="branch" class="input-box">
+                  <option selected disabled class="disabled_option">Select your Branch</option>
+                  <option value="CSE" >Computer Science</option>
+                  <option value="MEE" >Mechanical</option>
+                  <option value="ISE" >Information Science</option>
+                </select>
+              </div>
               
-              <input type="text" name="year" id="year" class="input-box" placeholder="Enter your Year" required value=""> <br>
+              <!-- <input type="text" name="year" id="year" class="input-box" placeholder="Enter your Year" required value=""> <br> -->
+              <div class="select">
+                <select name="year" id="year" class="input-box">
+                <option selected disabled class="disabled_option">Select your Year</option>
+                  <option value="1" >1</option>
+                  <option value="2" >2</option>
+                  <option value="3" >3</option>
+                  <option value="4" >4</option>
+                </select>
+              </div>
               
-              <input type="text" name="section" id="section" class="input-box" placeholder="Enter your Section" required value=""> <br>
+              <!-- <input type="text" name="section" id="section" class="input-box" placeholder="Enter your Section" required value=""> <br> -->
+              <div class="select">
+                <select name="section" id="section" class="input-box">
+                <option selected disabled class="disabled_option">Select your Section</option>
+                  <option value="A" >A</option>
+                  <option value="B" >B</option>
+                  <option value="C" >C</option>
+                </select>
+              </div>
+              
               
               <input type="password" name="password" id="password" class="input-box" placeholder="Password" required value=""> <br>
-              
+
               <input type="password" name="confirmpassword" id="confirmpassword" class="input-box" placeholder="Confirm Password" required value=""> <br>
               
               <button type="submit" class="main-btn" name="submit">SUBMIT</button>

@@ -65,6 +65,52 @@ h2{
     font-size:15px;
 }
 
+.disabled_option{
+    color:#9ba8b3;
+    font-size:15px;
+}
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #5c6664;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    cursor:pointer;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    line-height: 3;
+    overflow: hidden;
+    color:#9ba8b3;
+ }
+ 
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #0075cf;
+    top:7px;
+ }
+
 button{
     width:100%;
     border:transparent;
