@@ -8,6 +8,10 @@ if(isset($_POST["submit"])){
   $name = $_POST["name"];
   $usn = $_POST["usn"];
   $email = $_POST["email"];
+  $branch=$_POST["branch"];
+  $year=$_POST["year"];
+  $section=$_POST["section"];
+  $bys=$branch.$year.$section;
   $password = $_POST["password"];
   $confirmpassword = $_POST["confirmpassword"];
   $hashed_pass=password_hash($password,PASSWORD_DEFAULT);
@@ -19,7 +23,7 @@ if(isset($_POST["submit"])){
   }
   else{
     if($password == $confirmpassword){
-      $query = "INSERT INTO studentinfo VALUES('$name','$email','$usn','$hashed_pass')";
+      $query = "INSERT INTO studentinfo VALUES('$name','$email','$usn','$hashed_pass','$bys')";
       mysqli_query($conn, $query);
      
       header("Location: login.php");
@@ -83,11 +87,17 @@ if(isset($_POST["submit"])){
               <input type="text" name="usn" id="usn" class="input-box" placeholder="Enter your USN" required value=""> <br>
               
               <input type="email" name="email" id="email" class="input-box" placeholder="Enter your Email" required value=""> <br>
-             
+              
+              <input type="text" name="branch" id="branch" class="input-box" placeholder="Enter Branch (eg. CSE)" required value=""> <br>
+              
+              <input type="text" name="year" id="year" class="input-box" placeholder="Enter your Year" required value=""> <br>
+              
+              <input type="text" name="section" id="section" class="input-box" placeholder="Enter your Section" required value=""> <br>
+              
               <input type="password" name="password" id="password" class="input-box" placeholder="Password" required value=""> <br>
               
               <input type="password" name="confirmpassword" id="confirmpassword" class="input-box" placeholder="Confirm Password" required value=""> <br>
-
+              
               <button type="submit" class="main-btn" name="submit">SUBMIT</button>
 
               <a href="login.php">

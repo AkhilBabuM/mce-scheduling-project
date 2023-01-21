@@ -18,7 +18,12 @@
         $count++;
     }
    }
-   $sql="SELECT * from cse5a";
+   $sql1="SELECT bys from studentinfo where usn='4MC20CS002'";
+   $result1=mysqli_query($conn,$sql1);
+   $row1 = $result1->fetch_assoc();
+   $tablename=$row1["bys"];
+   $sql="SELECT * from $tablename";
+   $result=mysqli_query($conn,$sql);
    $result=mysqli_query($conn,$sql);
 
    while($row=$result->fetch_assoc()){
