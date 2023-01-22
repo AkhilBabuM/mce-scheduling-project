@@ -128,6 +128,47 @@
         }
     </style>
     <title>Update Schedule</title>
+    <script>
+        const countriesDropDown = document.getElementById("dropDown");
+
+        const arrayData = {
+            "1": "DBMS",
+            "2": "Java",
+            "3": "OS",
+            "4": "WP"
+        }
+
+        for (let key in arrayData) {
+            let option = document.createElement("option");
+            option.setAttribute('value', data[key]);
+
+            let optionText = document.createTextNode(key);
+            option.appendChild(optionText);
+
+            countriesDropDown.appendChild(option);
+        }
+      
+        /* 
+        var dropdown = document.getElementById("dropDown");
+
+
+        function addOptions(options) {
+
+            dropdown.innerHTML = "";
+
+            for (var i = 0; i < options.length; i++) {
+
+                var option = document.createElement("option");
+
+                option.value = options[i];
+                option.text = options[i];
+
+                dropdown.appendChild(option);
+            }
+        }
+
+        addOptions(["ADJ", "DBMS", "WP"]); */
+    </script>
 </head>
 
 <body>
@@ -147,7 +188,9 @@
             <tr>
                 <td>Monday</td>
                 <td>
-                    <input type="text" id="a0" value="" maxlength="8" name="a0" />
+                    <!-- <input type="text" id="a0" value="" maxlength="8" name="a0" /> -->
+                    <select id="dropdown">
+                    </select>
                 </td>
                 <td>
                     <input type="text" maxlength="8" value="" id="a1"  name="a1" />
@@ -349,4 +392,42 @@
     document.querySelector(`#a${g}`).value=ttcol7[k];
     document.querySelector(`#a${h}`).value=ttcol8[k];
     }
+
+    /* const countriesDropDown = document.getElementById("dropdown");
+
+    const countriesData = {
+        "Australia": "",
+        "Canada": "",
+        "UK": "",
+        "USA": ""
+    }
+
+    for (let key in countriesData) {
+        let option = document.createElement("option");
+        option.setAttribute('value', data[key]);
+
+        let optionText = document.createTextNode(key);
+        option.appendChild(optionText);
+
+        countriesDropDown.appendChild(option);
+    } */
+    /* var dropdown = document.getElementById("dropdown");
+
+
+    function addOptions(options) {
+
+        dropdown.innerHTML = "";
+
+        for (var i = 0; i < options.length; i++) {
+
+            var option = document.createElement("option");
+
+            option.value = options[i];
+            option.text = options[i];
+
+            dropdown.appendChild(option);
+        }
+    }
+
+    addOptions(["ADJ", "DBMS", "WP"]); */
 </script>
