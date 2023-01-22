@@ -56,22 +56,22 @@ if(isset($_POST["submit"])){
         </div>
         <nav class="nav-bar">
           <ul>
-                <li>
-                    <a href="" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="">Schedule</a>
-                </li>
-                <li>
-                    <a href="grievance.php">Grievance</a>
-                </li>
-                <li>
-                    <a href="">About</a>
-                </li>
-                <!-- <li>
-                    <a href="">Link 4</a>
-                </li> -->
-            </ul>
+            <li>
+                <a href="" class="active">Home</a>
+            </li>
+            <li>
+                <a href="">Schedule</a>
+            </li>
+            <li>
+                <a href="grievance.php">Grievance</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <!-- <li>
+                <a href="">Link 4</a>
+            </li> -->
+          </ul>
         </nav>
     </header>
     <div class="container">
@@ -102,7 +102,7 @@ if(isset($_POST["submit"])){
               <!-- <input type="text" name="year" id="year" class="input-box" placeholder="Enter your Year" required value=""> <br> -->
               <div class="select">
                 <select name="year" id="year" class="input-box">
-                <option selected disabled class="disabled_option">Select your Semester</option>
+                  <option selected disabled class="disabled_option">Select your Semester</option>
                   <option value="1" >1</option>
                   <option value="2" >2</option>
                   <option value="3" >3</option>

@@ -66,65 +66,121 @@ print_r($row);*/
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width ,initial-scale = 1.0">
-  <!--<link rel="stylesheet" href="style2.css">-->
+  
   <title>javascript cards</title>
+  <!-- <link rel="stylesheet" href="css/preloginstyle.css"> -->
+  <link rel="stylesheet" href="css/navbarstyle.css">
+  <link rel="stylesheet" href="css/preloginstyle.css">
   <style>
-    /*.container{
-      background-color:black;
-    }*/
+
     *{
-  margin: 0;
-  padding: 0;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
 }
 
 body{
-  background-color: #334145;  
+  background: #ebeef1;  
 }
 .container{
   width: 80%;
   margin: auto;
-  padding-top: 20px;
+  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .boxes{
-  border: 5px solid white;
+  border: none;
+  border-radius: 20px;
   width: 50%;
   height: 200px;
   display: flex;
- /* flex-direction: column;*/
   margin: 5px;
   align-items: center;   
   justify-content: center; 
   text-align:center;
-  box-shadow: 0 0 10px silver;
+  box-shadow:  5px 5px 5px -1px rgba(10, 99, 169, 0.16),
+               -5px -5px 5px -1px rgba(255, 255, 255, 0.70); 
   transition: 300ms all;
   background-size: cover;
   background-position: center;
-  background-color: #334145;  
-  background-color: white;
+  background: #ebeef1;
   padding: 10px 5px;
 }
-
+a{
+  color:blue;
+  text-decoration: none;
+}
 .boxes:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .boxes:hover .box-content{
   background-color: transparent;
   color: black;
 }
-
+.btn{
+    width:100%;
+    border:transparent;
+    margin: 42px 0 2px;
+    height: 39px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px 12px;
+    box-sizing: border-box;
+    outline:none;
+    box-shadow:  5px 5px 5px -1px rgba(10, 99, 169, 0.10),
+                -5px -5px 5px -1px rgba(255, 255, 255, 0.50); 
+    cursor: pointer;
+}
+.btn:hover{
+  box-shadow:  inset 5px 5px 5px -1px rgba(10, 99, 169, 0.16),
+                inset -5px -5px 5px -1px rgba(255, 255, 255, 0.70); 
+}
+p{
+  color:#496072;
+}
+.bottom-gap{
+  padding:40px;
+}
  </style>
 </head>
-<!--onload="loded()"-->
-<body >
- <!-- <div class="bg">
 
-  </div>-->
+<body >
+  
+<header>
+      <div class="logo">MCE Portal</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+          <ul>
+            <li>
+                <a href="" class="active">Home</a>
+            </li>
+            <li>
+                <a href="">Schedule</a>
+            </li>
+            <li>
+                <a href="grievance.php">Grievance</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <!-- <li>
+                <a href="">Link 4</a>
+            </li> -->
+          </ul>
+        </nav>
+    </header>
+
   <div class="container">
     
   </div>
+  <div class="bottom-gap"></div>
+
  <!-- <script src="js/script.js" type="text/javascript" charset="utf-8"></script>-->
  <script src="displaydetails.js"></script>
 </body>
@@ -179,16 +235,17 @@ for(let i=0;i<usndetails.length;i++){
   divelement.innerHTML=`
   <form action="" method="post">
   <div id="detfetch${i}">
-    <h2>Name : ${namedetails[i]}</h2>
-    <h2>USN : ${usndetails[i]}</h2>
+    <p>Feedback ${i+1}</p><br>
+    <h2>${namedetails[i]}</h2>
+    <h2>${usndetails[i]}</h2><br>
    
     <h3>
-      Count value: ${countvalue[usndetails[i]]}
+      Votes: ${countvalue[usndetails[i]]}
     </h3>
     <input type="hidden" id="usnvalue" name="usnval" value="${usndetails[i]}" >
-    <!--<a class="showmore" href="#">ReadMore</a>-->
+    <!--<a class="showmore" href="#">Read More</a>-->
     <!--<input type="button" value="fetchdata" onclick=opengoogle(textdetails[${i}])>-->
-    <a href="displaydetails.html" onclick=opengoogle(textdetails[${i}])>ReadMore</a>
+    <br><a href="displaydetails.html" class="btn" onclick=opengoogle(textdetails[${i}])>Read Grievance</a>
     </form>
   </div><br>` ; 
   var dynamic = document.querySelector('.container');  

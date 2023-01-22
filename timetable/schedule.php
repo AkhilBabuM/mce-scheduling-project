@@ -383,14 +383,14 @@
     console.log(ttcol2);
     for(var a=0, b=1, c=2, d=3, e=4, i=5, g=6, h=7, k=0;a<=40,b<=41,c<=42,d<=43,e<=44,i<=45,g<=46,h<=47,k<=7;a+=8,b+=8,c+=8,d+=8,e+=8,i+=8,g+=8,h+=8,k++)
     {
-    document.querySelector(`#a${a}`).value=ttcol1[k];
-    document.querySelector(`#a${b}`).value=ttcol2[k];
-    document.querySelector(`#a${c}`).value=ttcol3[k];
-    document.querySelector(`#a${d}`).value=ttcol4[k];
-    document.querySelector(`#a${e}`).value=ttcol5[k];
-    document.querySelector(`#a${i}`).value=ttcol6[k];
-    document.querySelector(`#a${g}`).value=ttcol7[k];
-    document.querySelector(`#a${h}`).value=ttcol8[k];
+        document.querySelector(`#a${a}`).value=ttcol1[k];
+        document.querySelector(`#a${b}`).value=ttcol2[k];
+        document.querySelector(`#a${c}`).value=ttcol3[k];
+        document.querySelector(`#a${d}`).value=ttcol4[k];
+        document.querySelector(`#a${e}`).value=ttcol5[k];
+        document.querySelector(`#a${i}`).value=ttcol6[k];
+        document.querySelector(`#a${g}`).value=ttcol7[k];
+        document.querySelector(`#a${h}`).value=ttcol8[k];
     }
 
  /*    const dom = document.getElementById("dropDown");
