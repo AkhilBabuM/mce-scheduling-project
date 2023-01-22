@@ -24,30 +24,30 @@ else{
   <body>
   <header>
       <div class="logo">MCE Portal</div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <nav class="nav-bar">
-            <ul>
-                <li>
-                    <a href="" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="">Schedule</a>
-                </li>
-                <li>
-                    <a href="grievance.php">Grievance</a>
-                </li>
-                <li>
-                    <a href="">About</a>
-                </li>
-                <li>
-                    <a href="logout.php">LOGOUT</a>
-                </li>
-            </ul>
-        </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Schedule</a>
+                    </li>
+                    <li>
+                        <a href="grievance.php">Grievance</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="logout.php">LOGOUT</a>
+                    </li>
+                </ul>
+            </nav>
     </header>
     <div class="container">
       <h1>Welcome <?php echo $row["Name"]; ?></h1> 

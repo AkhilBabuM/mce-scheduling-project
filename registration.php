@@ -102,11 +102,15 @@ if(isset($_POST["submit"])){
               <!-- <input type="text" name="year" id="year" class="input-box" placeholder="Enter your Year" required value=""> <br> -->
               <div class="select">
                 <select name="year" id="year" class="input-box">
-                <option selected disabled class="disabled_option">Select your Year</option>
+                <option selected disabled class="disabled_option">Select your Semester</option>
                   <option value="1" >1</option>
                   <option value="2" >2</option>
                   <option value="3" >3</option>
                   <option value="4" >4</option>
+                  <option value="5" >5</option>
+                  <option value="6" >6</option>
+                  <option value="7" >7</option>
+                  <option value="8" >8</option>
                 </select>
               </div>
               
