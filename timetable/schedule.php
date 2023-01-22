@@ -129,7 +129,7 @@
     </style>
     <title>Update Schedule</title>
     <script>
-        const countriesDropDown = document.getElementById("dropDown");
+        const dom = document.getElementById("dropDown");
 
         const arrayData = {
             "1": "DBMS",
@@ -145,7 +145,7 @@
             let optionText = document.createTextNode(key);
             option.appendChild(optionText);
 
-            countriesDropDown.appendChild(option);
+            dom.appendChild(option);
         }
       
         /* 
@@ -393,41 +393,43 @@
     document.querySelector(`#a${h}`).value=ttcol8[k];
     }
 
-    /* const countriesDropDown = document.getElementById("dropdown");
+ /*    const dom = document.getElementById("dropDown");
 
-    const countriesData = {
-        "Australia": "",
-        "Canada": "",
-        "UK": "",
-        "USA": ""
-    }
-
-    for (let key in countriesData) {
-        let option = document.createElement("option");
-        option.setAttribute('value', data[key]);
-
-        let optionText = document.createTextNode(key);
-        option.appendChild(optionText);
-
-        countriesDropDown.appendChild(option);
-    } */
-    /* var dropdown = document.getElementById("dropdown");
-
-
-    function addOptions(options) {
-
-        dropdown.innerHTML = "";
-
-        for (var i = 0; i < options.length; i++) {
-
-            var option = document.createElement("option");
-
-            option.value = options[i];
-            option.text = options[i];
-
-            dropdown.appendChild(option);
+        const arrayData = {
+            "1": "DBMS",
+            "2": "Java",
+            "3": "OS",
+            "4": "WP"
         }
-    }
 
-    addOptions(["ADJ", "DBMS", "WP"]); */
+        for (let key in arrayData) {
+            let option = document.createElement("option");
+            option.setAttribute('value', data[key]);
+
+            let optionText = document.createTextNode(key);
+            option.appendChild(optionText);
+
+            dom.appendChild(option);
+        } */
+      
+        /* 
+        var dropdown = document.getElementById("dropDown");
+
+
+        function addOptions(options) {
+
+            dropdown.innerHTML = "";
+
+            for (var i = 0; i < options.length; i++) {
+
+                var option = document.createElement("option");
+
+                option.value = options[i];
+                option.text = options[i];
+
+                dropdown.appendChild(option);
+            }
+        }
+
+        addOptions(["ADJ", "DBMS", "WP"]); */
 </script>
