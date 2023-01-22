@@ -106,7 +106,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+    <link rel="stylesheet" href="navbarstyle.css">
+    <link rel="stylesheet" href="preloginstyle.css">
+    <!-- <style>
         table.center {
 
             margin-right: auto;
@@ -125,6 +127,74 @@
             border: 2px solid black;
             border-collapse: collapse;
             padding: 6px;
+        }
+    </style> -->
+    <style>
+        /* table.center {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        form.center {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        table,td,th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 6px;
+        } */
+        body {
+            background-color: #ebeef1;
+        }
+
+        table.center {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 300px;
+        }
+
+        .styled-table {
+            
+            border-radius: 25px;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+            box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+            overflow: hidden;
+            background-color: #ebeef1;
+        }
+
+        .styled-table thead tr {
+            border: solid;
+
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+
+            box-shadow: inset 5px 5px 5px -1px rgba(5, 48, 78, 0.05),
+                inset -5px -5px 5px -1px rgba(255, 255, 255, 0.3);
+            border-width: 1px;
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
         }
     </style>
     <title>Update Schedule</title>
@@ -172,8 +242,35 @@
 </head>
 
 <body>
+    <header>
+        <div class="logo">MCE Portal</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="">Schedule</a>
+                </li>
+                <li>
+                    <a href="grievance.php">Grievance</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <!-- <li>
+                    <a href="">Link 4</a>
+                </li> -->
+            </ul>
+        </nav>
+    </header>
     <form action="schedule.php" method="post">
-        <table class="center">
+        <table class="center tb styled-table">
             <tr>
                 <th>Day</th>
                 <th>8:30-9:30</th>
@@ -188,9 +285,9 @@
             <tr>
                 <td>Monday</td>
                 <td>
-                    <!-- <input type="text" id="a0" value="" maxlength="8" name="a0" /> -->
-                    <select id="dropdown">
-                    </select>
+                   <input type="text" id="a0" value="" maxlength="8" name="a0" />
+                    <!-- <select id="dropdown">
+                    </select> -->
                 </td>
                 <td>
                     <input type="text" maxlength="8" value="" id="a1"  name="a1" />
@@ -325,7 +422,7 @@
             <tr>
                 <td>Saturday</td>
                 <td>
-                    <input type="text" maxlength="8" value="" id="a40"  name="a40" />
+                    <input type="text" maxlength="6" value="" id="a40"  name="a40" />
                 </td>
                 <td>
                     <input type="text" maxlength="8" value="" id="a41"  name="a41"/>
@@ -351,7 +448,7 @@
             </tr>
         </table>
         <br>
-        <button type="submit" name="submit">Update</button>
+        <button type="submit" name="submit" class="main-btn" style="width:200px; margin-left:100px">Update</button>
     </form>
 </body>
 

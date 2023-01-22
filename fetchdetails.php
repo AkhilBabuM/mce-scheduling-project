@@ -67,7 +67,7 @@ print_r($row);*/
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width ,initial-scale = 1.0">
 
-  <title>javascript cards</title>
+  <title>Grievance List</title>
   <!-- <link rel="stylesheet" href="css/preloginstyle.css"> -->
   <link rel="stylesheet" href="css/navbarstyle.css">
   <link rel="stylesheet" href="css/preloginstyle.css">

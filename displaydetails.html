@@ -4,13 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grievance Details</title>
+    <link rel="stylesheet" href="css/navbarstyle.css">
+    <link rel="stylesheet" href="css/preloginstyle.css">
+    <style>
+        * {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    div{
+      padding-top:200px;
+    }
+        .container{
+            border: none;
+      border-radius: 20px;
+      font-size: 20px;
+      width:70%;
+      height:600px;
+      padding:100px;
+      margin:auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 5px 5px 5px -1px rgba(10, 99, 169, 0.16),
+        -5px -5px 5px -1px rgba(255, 255, 255, 0.70);
+      background-position: center;
+      background: #ebeef1;
+        }
+    </style>
 </head>
 <body>
-   
+    <header>
+        <div class="logo">MCE Portal</div>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+          <ul>
+            <li>
+              <a href="" class="active">Home</a>
+            </li>
+            <li>
+              <a href="">Schedule</a>
+            </li>
+            <li>
+              <a href="grievance.php">Grievance</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <!-- <li>
+                    <a href="">Link 4</a>
+                </li> -->
+          </ul>
+        </nav>
+      </header>
     <script>
        var querystring=sessionStorage.getItem("fulldetails");
-       document.write(querystring);
+       document.write('<div><div class="container">'+querystring+'</div></div>');
+       //document.write('<div class="container"><div class="card"><div class="inner-box"><div class="card-front">'+querystring+'</div></div></div></div>');
     </script>
 </body>
 </html>
