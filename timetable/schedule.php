@@ -153,10 +153,11 @@
             margin-right: auto;
             margin-left: auto;
             margin-top: 300px;
+            left: 90px
         }
 
         .styled-table {
-            
+            position: absolute;
             border-radius: 25px;
             margin: 25px 0;
             font-size: 0.9em;
@@ -242,33 +243,35 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">MCE Portal</div>
+<header>
+      <a href="index1.php"><div class="logo">MCE Portal</div></a>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
         <nav class="nav-bar">
-            <ul>
+            <ul style="position:absolute; right:40px; top: 20px;">
                 <li>
-                    <a href="" class="active">Home</a>
+                    <a href="index1.php">Home</a>
                 </li>
                 <li>
-                    <a href="">Schedule</a>
+                    <a href="timetable\studttfetch.php"  class="active">Schedule</a>
                 </li>
                 <li>
                     <a href="grievance.php">Grievance</a>
                 </li>
                 <li>
+                    <a href="vote.php">Vote</a>
+                </li>
+                <li>
                     <a href="">About</a>
                 </li>
-                <!-- <li>
-                    <a href="">Link 4</a>
-                </li> -->
+                <li>
+                    <a href="logout.php">LOGOUT</a>
+                </li>
             </ul>
         </nav>
-    </header>
     <form action="schedule.php" method="post">
         <table class="center tb styled-table">
             <tr>
@@ -448,8 +451,9 @@
             </tr>
         </table>
         <br>
-        <button type="submit" name="submit" class="main-btn" style="width:200px; margin-left:100px">Update</button>
+        <button type="submit" name="submit" class="main-btn" style="width:200px; position: absolute; top:650px; left:90px">Update</button>
     </form>
+    
 </body>
 
 </html>
