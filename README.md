@@ -1,3 +1,3 @@
 ﻿# mce-scheduling-project
- test
- 
+Project on MCE Official Academic scheduling and student mentoring organiser
+
