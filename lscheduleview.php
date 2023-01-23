@@ -27,13 +27,14 @@ $class=explode(',',$row["lectureclass"]);
         }
     </style>
 </head>
-<body>
+<body style="background-color: #ebeef1;">
 <header style="position:absolute; top:0px;">
       <a href="index1.php"><div class="logo">MCE Portal</div></a>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
+            
         </div>
         <nav class="nav-bar">
             <ul>
