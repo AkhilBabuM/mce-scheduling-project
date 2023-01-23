@@ -1,6 +1,7 @@
 <?php
 require 'config.php';
 session_start();
+
 if (!empty($_SESSION["tid"])) {
     $sql = "SELECT * from lecturerinfo";
     $result = mysqli_query($conn, $sql);
@@ -28,6 +29,7 @@ if (!empty($_SESSION["tid"])) {
     <link rel="stylesheet" href="css/navbarstyle.css">
     <style>
         a {
+
             font-size: 50px;
             color: #08528a;
         }
@@ -35,10 +37,12 @@ if (!empty($_SESSION["tid"])) {
 </head>
 
 <body>
+
     <header style="position:absolute; top:0px;">
         <a href="index1.php">
             <div class="logo">MCE Portal</div>
         </a>
+
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -73,13 +77,17 @@ if (!empty($_SESSION["tid"])) {
     var classinfo = new Array();
     classinfo = <?= json_encode($class) ?>;
     console.log(classinfo);
-    var parentelement = document.querySelector(".links");
-    for (let i = 0; i < classinfo.length; i++) {
-        let divelement = document.createElement('div');
-        divelement.innerHTML = `
+
+    var parentelement=document.querySelector(".links");
+    for(let i=0;i<classinfo.length;i++)
+    {   
+        let divelement=document.createElement('div');
+        divelement.innerHTML=`
         <form action="" method="post" class=" btn main-btn" style=" margin-top:120px;">
         <!--<a href="schedule.php" onclick="opentt(classinfo[${i}])">${classinfo[i]}</a>-->
-        <button type="submit" name="submit">${classinfo[i]}</button>
+        <input type="hidden" name="ttval" value="${classinfo[i]}">
+        <button type="submit" name="submit" >${classinfo[i]}</button>
+
         </form>`;
         parentelement.appendChild(divelement);
     }
@@ -87,6 +95,10 @@ if (!empty($_SESSION["tid"])) {
         sessionStorage.setItem("timetable",tt);
         console.log(name);
     }*/
+
+   /* var session = '<?php echo json_encode($_SESSION['ttval']) ?>';
+    alert(session);*/
+
 </script>
 
 </html>
