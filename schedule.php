@@ -3,77 +3,12 @@
     session_start();
    if(isset($_POST['submit']))
    {
-   /* $a1=$_POST['a'];
-    $a2=$_POST['b'];
-    $a3=$_POST["a3"];
-    $a4=$_POST["a4"];
-    $a5=$_POST["a5"];
-    $a6=$_POST["a6"];
-    $a7=$_POST["a7"];
-    $a8=$_POST["a8"];
-    $b1=$_POST["b1"];
-    $b2=$_POST["b2"];
-    $b3=$_POST["b3"];
-    $b4=$_POST["b4"];
-    $b5=$_POST["b5"];
-    $b6=$_POST["b6"];
-    $b7=$_POST["b7"];
-    $b8=$_POST["b8"];
-    $c1=$_POST["c1"];
-    $c2=$_POST["c2"];
-    $c3=$_POST["c3"];
-    $c4=$_POST["c4"];
-    $c5=$_POST["c5"];
-    $c6=$_POST["c6"];
-    $c7=$_POST["c7"];
-    $c8=$_POST["c8"];
-    $d1=$_POST["d1"];
-    $d2=$_POST["d2"];
-    $d3=$_POST["d3"];
-    $d4=$_POST["d4"];
-    $d5=$_POST["d5"];
-    $d6=$_POST["d6"];
-    $d7=$_POST["d7"];
-    $d8=$_POST["d8"];
-    $e1=$_POST["e1"];
-    $e2=$_POST["e2"];
-    $e3=$_POST["e3"];
-    $e4=$_POST["e4"];
-    $e5=$_POST["e5"];
-    $e6=$_POST["e6"];
-    $e7=$_POST["e7"];
-    $e8=$_POST["e8"];
-    $f1=$_POST["f1"];
-    $f2=$_POST["f2"];
-    $f3=$_POST["f3"];
-    $f4=$_POST["f4"];
-    $f5=$_POST["f5"];
-    $f6=$_POST["f6"];
-    $f7=$_POST["f7"];
-    $f8=$_POST["f8"];*/
-   
+ 
    
     for($x=0;$x<48;$x++){
         $f[$x]=$_POST["a".$x];
     }
    
-    //echo($f[0]);
-
-    //$f1=$_POST["a0"];
-  /*  $sql="UPDATE cse5a set h1='$a1', h2='$a2',h3='$a3',h4='$a4',h5='$a5',h6='$a6',h7='$a7',h8='$a8' where day_='mon';";
-    $conn->query($sql);
-    $sql="UPDATE cse5a set h1='$b1', h2='$b2',h3='$b3',h4='$b4',h5='$b5',h6='$b6',h7='$b7',h8='$b8' where day_='tue'";
-    $conn->query($sql);
-    $sql="UPDATE cse5a set h1='$c1', h2='$c2',h3='$c3',h4='$c4',h5='$c5',h6='$c6',h7='$c7',h8='$c8' where day_='wed'";
-    $conn->query($sql);
-    $sql="UPDATE cse5a set h1='$d1', h2='$d2',h3='$d3',h4='$d4',h5='$d5',h6='$d6',h7='$d7',h8='$d8' where day_='thu'";
-    $conn->query($sql);
-    $sql="UPDATE cse5a set h1='$e1', h2='$e2',h3='$e3',h4='$e4',h5='$e5',h6='$e6',h7='$e7',h8='$e8' where day_='fri'";
-    $conn->query($sql);
-    $sql="UPDATE cse5a set h1='$f1', h2='$f2',h3='$f3',h4='$f4',h5='$f5',h6='$f6',h7='$f7',h8='$f8' where day_='sat';";
-    $conn->query($sql);*/
-   /* $sql="UPDATE cse5a set h1='$f[0]', h2='$f[1]',h3='$f[2]',h4='$f[3]',h5='$f[4]',h6='$f[5]',h7='$f[6]',h8='$f[7]' where day_='mon';";
-    $conn->query($sql);*/
     $days=array("mon","tue","wed","thu","fri","sat");
     $count=0;
     for($a=0,$b=1,$c=2,$d=3,$e=4,$i=5,$g=6,$h=7;$a<=40,$b<=41,$c<=42,$d<=43,$e<=44,$i<=45,$g<=46,$h<=47;$a+=8,$b+=8,$c+=8,$d+=8,$e+=8,$i+=8,$g+=8,$h+=8){
@@ -106,7 +41,6 @@
     echo($tablename);
    }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -114,7 +48,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+    <link rel="stylesheet" href="css/navbarstyle.css">
+    <link rel="stylesheet" href="css/preloginstyle.css">
+    <!-- <style>
         table.center {
 
             margin-right: auto;
@@ -134,13 +70,153 @@
             border-collapse: collapse;
             padding: 6px;
         }
+    </style> -->
+    <style>
+        /* table.center {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        form.center {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        table,td,th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 6px;
+        } */
+        body {
+            background-color: #ebeef1;
+        }
+
+        table.center {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 300px;
+            left: 90px
+        }
+
+        .styled-table {
+            position: absolute;
+            border-radius: 25px;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+            box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+            overflow: hidden;
+            background-color: #ebeef1;
+        }
+
+        .styled-table thead tr {
+            border: solid;
+
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+
+            box-shadow: inset 5px 5px 5px -1px rgba(5, 48, 78, 0.05),
+                inset -5px -5px 5px -1px rgba(255, 255, 255, 0.3);
+            border-width: 1px;
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
     </style>
     <title>Update Schedule</title>
-</head>
+    <script>
+        const dom = document.getElementById("dropDown");
+
+        const arrayData = {
+            "1": "DBMS",
+            "2": "Java",
+            "3": "OS",
+            "4": "WP"
+        }
+
+        for (let key in arrayData) {
+            let option = document.createElement("option");
+            option.setAttribute('value', data[key]);
+
+            let optionText = document.createTextNode(key);
+            option.appendChild(optionText);
+
+            dom.appendChild(option);
+        }
+      
+        /* 
+        var dropdown = document.getElementById("dropDown");
+
+
+        function addOptions(options) {
+
+            dropdown.innerHTML = "";
+
+            for (var i = 0; i < options.length; i++) {
+
+                var option = document.createElement("option");
+
+                option.value = options[i];
+                option.text = options[i];
+
+                dropdown.appendChild(option);
+            }
+        }
+
+        addOptions(["ADJ", "DBMS", "WP"]); */
+    </script>
+    </head>
 
 <body>
+<header>
+      <a href="index1.php"><div class="logo">MCE Portal</div></a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index1.php">Home</a>
+                </li>
+                <li>
+                    <a href="studttfetch.php">Schedule</a>
+                </li>
+                <li>
+                    <a href="grievance.php">Grievance</a>
+                </li>
+                <li>
+                    <a href="vote.php">Vote</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="logout.php">LOGOUT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <form action="schedule.php" method="post">
-        <table class="center">
+        <table class="center tb styled-table">
             <tr>
                 <th>Day</th>
                 <th>8:30-9:30</th>
@@ -316,10 +392,10 @@
             </tr>
         </table>
         <br>
-        <button type="submit" name="submit">Update</button>
-        <input type="text" name="ttvalue" id="ttval" value="">
+        <button type="submit" name="submit" class="main-btn" style="width:200px; position: absolute; top:620px; right:90px">Update</button><br>
+        <input class="input-box" style="width:200px; position: absolute; top:654px; right:300px" type="text" name="ttvalue" id="ttval" value="" placeholder="Enter class (eg.cse5a)">
     </form>
-    
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>
@@ -361,13 +437,8 @@
     }
     let querystring=sessionStorage.getItem("timetable");
     console.log(querystring);
-   /* let divelement=document.createElement('div');
-    divelement.innerHTML=`<form action="" method="post">
-    <input type="text" id="ttval" name="ttval" value="${querystring}" >
-    </form>`
-    let parentelement=document.getElementById("container");
-    parentelement.appendChild(divelement);*/
+
     document.getElementById("ttval").value=querystring;
-   /* var session = '<?php echo json_encode($_SESSION['ttval']) ?>';
-    alert(session);*/
+    <?php echo json_encode($_SESSION['ttval']) ?>';
+
 </script>

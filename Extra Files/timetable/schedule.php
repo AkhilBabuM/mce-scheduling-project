@@ -82,7 +82,10 @@
         $count++;
     }
    }
-   $sql="SELECT * from cse5a";
+   if(!empty($_SESSION["ttval"])){
+
+    $tablename=$_SESSION["ttval"];
+    $sql="SELECT * from $tablename";
    $result=mysqli_query($conn,$sql);
 
    while($row=$result->fetch_assoc()){
@@ -97,7 +100,11 @@
     $col6[]=$row["h6"];
     $col7[]=$row["h7"];
     $col8[]=$row["h8"];
-   }
+}}
+else{
+ $tablename=$_SESSION["ttval"];
+ echo($tablename);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -290,8 +297,6 @@
                 <td>Monday</td>
                 <td>
                    <input type="text" id="a0" value="" maxlength="8" name="a0" />
-                    <!-- <select id="dropdown">
-                    </select> -->
                 </td>
                 <td>
                     <input type="text" maxlength="8" value="" id="a1"  name="a1" />
@@ -426,7 +431,7 @@
             <tr>
                 <td>Saturday</td>
                 <td>
-                    <input type="text" maxlength="6" value="" id="a40"  name="a40" />
+                    <input type="text" maxlength="8" value="" id="a40"  name="a40" />
                 </td>
                 <td>
                     <input type="text" maxlength="8" value="" id="a41"  name="a41"/>

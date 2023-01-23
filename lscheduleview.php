@@ -36,7 +36,7 @@ if (!empty($_SESSION["tid"])) {
     </style>
 </head>
 
-<body>
+<body style="background-color:#ebeef1;">
 
     <header style="position:absolute; top:0px;">
         <a href="index1.php">
@@ -51,16 +51,10 @@ if (!empty($_SESSION["tid"])) {
         <nav class="nav-bar">
             <ul>
                 <li>
-                    <a href="index1.php">Home</a>
+                    <a href="lscheduleview.php" class="active">Classes</a>
                 </li>
                 <li>
                     <a href="timetable/studttfetch.php">Schedule</a>
-                </li>
-                <li>
-                    <a href="grievance.php">Grievance</a>
-                </li>
-                <li>
-                    <a href="vote.php">Vote</a>
                 </li>
                 <li>
                     <a href="">About</a>
@@ -71,7 +65,7 @@ if (!empty($_SESSION["tid"])) {
             </ul>
         </nav>
     </header>
-    <div class="links card" style="text-align:center;  margin-top:300px; margin-left:40%;"></div>
+    <div class="links" style="text-align:center;  margin-top:300px; margin-left:auto; margin-right:auto; width:20%"></div>
 </body>
 <script>
     var classinfo = new Array();
@@ -83,10 +77,10 @@ if (!empty($_SESSION["tid"])) {
     {   
         let divelement=document.createElement('div');
         divelement.innerHTML=`
-        <form action="" method="post" class=" btn main-btn" style=" margin-top:120px;">
+        <form action="" method="post" style=" margin-top:60px;">
         <!--<a href="schedule.php" onclick="opentt(classinfo[${i}])">${classinfo[i]}</a>-->
         <input type="hidden" name="ttval" value="${classinfo[i]}">
-        <button type="submit" name="submit" >${classinfo[i]}</button>
+        <button class="main-btn" type="submit" name="submit" >${classinfo[i]}</button>
 
         </form>`;
         parentelement.appendChild(divelement);
