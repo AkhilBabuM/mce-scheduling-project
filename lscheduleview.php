@@ -58,7 +58,7 @@ $class=explode(',',$row["lectureclass"]);
             </ul>
         </nav>
     </header>
-    <div class="links card" style="text-align:center;  margin-top:300px; margin-left:40%"></div>
+    <div class="links card" style="text-align:center;  margin-top:300px; margin-left:40%;"></div>
 </body>
 <script>
     var classinfo=new Array();
@@ -69,7 +69,7 @@ $class=explode(',',$row["lectureclass"]);
     {   
         let divelement=document.createElement('div');
         divelement.innerHTML=`
-        <form action="" class=" btn main-btn" style=" margin:120px;"></form>
+        <form action="" class=" btn main-btn" style=" margin-top:120px;"></form>
         <a href="schedule.php" onclick="opentt(classinfo[${i}])">${classinfo[i]}</a>
         </form>`;
         parentelement.appendChild(divelement);
