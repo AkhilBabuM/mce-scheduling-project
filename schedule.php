@@ -1,6 +1,6 @@
 <?php
     require 'config.php';
-
+    session_start();
    if(isset($_POST['submit']))
    {
    /* $a1=$_POST['a'];
@@ -82,8 +82,8 @@
         $count++;
     }
    }
-   $tablename=$_POST["ttvalue"];
-   echo($tablename);
+   if(!empty($_SESSION["ttval"])){
+   $tablename=$_SESSION["ttval"];
    $sql="SELECT * from $tablename";
    $result=mysqli_query($conn,$sql);
 
@@ -99,6 +99,10 @@
     $col6[]=$row["h6"];
     $col7[]=$row["h7"];
     $col8[]=$row["h8"];
+   }}
+   else{
+    $tablename=$_SESSION["ttval"];
+    echo($tablename);
    }
 ?>
 <!DOCTYPE html>
@@ -362,4 +366,6 @@
     let parentelement=document.getElementById("container");
     parentelement.appendChild(divelement);*/
     document.getElementById("ttval").value=querystring;
+   /* var session = '<?php echo json_encode($_SESSION['ttval']) ?>';
+    alert(session);*/
 </script>
