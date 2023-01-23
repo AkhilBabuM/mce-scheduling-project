@@ -6,6 +6,11 @@ $sql="SELECT * from lecturerinfo";
 $result=mysqli_query($conn,$sql);
 while($row = $result->fetch_assoc()){
 $class=explode(',',$row["lectureclass"]);
+if(isset($_POST["submit"])){
+    $_SESSION["ttval"]=$_POST["submit"];
+    header("Location: schedule.php");
+    echo($_SESSION["ttval"]);
+}
 }
 #print_r($class);
 }
@@ -27,14 +32,13 @@ $class=explode(',',$row["lectureclass"]);
         }
     </style>
 </head>
-<body style="background-color: #ebeef1;">
+<body>
 <header style="position:absolute; top:0px;">
       <a href="index1.php"><div class="logo">MCE Portal</div></a>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
-            
         </div>
         <nav class="nav-bar">
             <ul>
@@ -70,14 +74,15 @@ $class=explode(',',$row["lectureclass"]);
     {   
         let divelement=document.createElement('div');
         divelement.innerHTML=`
-        <form action="" class=" btn main-btn" style=" margin-top:120px;"></form>
-        <a href="schedule.php" onclick="opentt(classinfo[${i}])">${classinfo[i]}</a>
+        <form action="" method="post" class=" btn main-btn" style=" margin-top:120px;">
+        <!--<a href="schedule.php" onclick="opentt(classinfo[${i}])">${classinfo[i]}</a>-->
+        <button type="submit" name="submit">${classinfo[i]}</button>
         </form>`;
         parentelement.appendChild(divelement);
     }
-    function opentt(tt){
+    /*function opentt(tt){
         sessionStorage.setItem("timetable",tt);
         console.log(name);
-    }
+    }*/
 </script>
 </html>
