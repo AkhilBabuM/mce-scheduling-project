@@ -30,11 +30,13 @@ $class=explode(',',$row["lectureclass"]);
     {   
         let divelement=document.createElement('div');
         divelement.innerHTML=`
-        <a href="ltimetable.php" onclick="opentt(${classinfo[i]})">${classinfo[i]}</a>`
+        <form action=""></form>
+        <a href="schedule.php" onclick="opentt(classinfo[${i}])">${classinfo[i]}</a>
+        </form>`;
         parentelement.appendChild(divelement);
     }
-    function opentt(name){
-        sessionStorage.setItem("timetable",name);
+    function opentt(tt){
+        sessionStorage.setItem("timetable",tt);
         console.log(name);
     }
 </script>
