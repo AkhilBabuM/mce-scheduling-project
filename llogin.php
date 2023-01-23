@@ -2,7 +2,7 @@
 require 'config.php';
 session_start();
 if(!empty($_SESSION["usn"])){
-  header("Location: index1.php");
+  header("Location: lscheduleview.php");
 }
 if(isset($_POST["submit"])){
   $tid = $_POST["tid"];

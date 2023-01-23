@@ -139,32 +139,35 @@ if (isset($_POST["submit"])) {
 <body>
 
 <header>
-    <div class="logo">MCE Portal</div>
-    <div class="hamburger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-    <nav class="nav-bar">
-      <ul>
-        <li>
-          <a href="" class="active">Home</a>
-        </li>
-        <li>
-          <a href="">Schedule</a>
-        </li>
-        <li>
-          <a href="grievance.php">Grievance</a>
-        </li>
-        <li>
-          <a href="">About</a>
-        </li>
-        <!-- <li>
-                <a href="">Link 4</a>
-            </li> -->
-      </ul>
-    </nav>
-  </header>
+      <a href="index1.php"><div class="logo">MCE Portal</div></a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index1.php">Home</a>
+                </li>
+                <li>
+                    <a href="timetable/studttfetch.php">Schedule</a>
+                </li>
+                <li>
+                    <a href="grievance.php">Grievance</a>
+                </li>
+                <li>
+                    <a href="vote.php" class="active">Vote</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="logout.php">LOGOUT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
   <div class="container" style="height:0;">
 

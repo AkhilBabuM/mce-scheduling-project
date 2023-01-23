@@ -32,7 +32,7 @@ if(isset($_POST["submit"])){
 </head>
 <body>
 <header>
-      <div class="logo">MCE Portal</div>
+      <a href="index1.php"><div class="logo">MCE Portal</div></a>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -44,17 +44,20 @@ if(isset($_POST["submit"])){
                     <a href="index1.php">Home</a>
                 </li>
                 <li>
-                    <a href="">Schedule</a>
+                    <a href="timetable/studttfetch.php">Schedule</a>
                 </li>
                 <li>
-                    <a href=""  class="active">Grievance</a>
+                    <a href=""class="active">Grievance</a>
+                </li>
+                <li>
+                    <a href="vote.php">Vote</a>
                 </li>
                 <li>
                     <a href="">About</a>
                 </li>
-                <!-- <li>
-                    <a href="">Link 4</a>
-                </li> -->
+                <li>
+                    <a href="logout.php">LOGOUT</a>
+                </li>
             </ul>
         </nav>
     </header>

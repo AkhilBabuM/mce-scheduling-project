@@ -98,7 +98,7 @@ if(isset($_POST["submit"])){
               <button type="submit" class="main-btn" name="submit">SUBMIT</button>
 
               <a href="login.php">
-                <button type="button" class="side-btn" onclick="login.php">GO TO LOGIN</button>
+                <button type="button" class="side-btn" onclick="llogin.php">GO TO LOGIN</button>
               </a>
             </form>
             <br>
