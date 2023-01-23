@@ -82,25 +82,29 @@
         $count++;
     }
    }
-   //$tablename=$_POST["ttvalue"];
-   //echo($tablename);
-   $sql="SELECT * from CSE5A";
-   $result=mysqli_query($conn,$sql);
+   if(!empty($_SESSION["ttval"])){
+    $tablename=$_SESSION["ttval"];
+    $sql="SELECT * from $tablename";
+    $result=mysqli_query($conn,$sql);
 
-   while($row=$result->fetch_assoc()){
-    $col1[]=$row["h1"];
-   /// print_r($col1);
-    $col2[]=$row["h2"];
-    //print_r($col2);
-    $col3[]=$row["h3"];
-    //print_r($col3);
-    $col4[]=$row["h4"];
-    $col5[]=$row["h5"];
-    $col6[]=$row["h6"];
-    $col7[]=$row["h7"];
-    $col8[]=$row["h8"];
-   }
-?>
+    while($row=$result->fetch_assoc()){
+     $col1[]=$row["h1"];
+    /// print_r($col1);
+     $col2[]=$row["h2"];
+     //print_r($col2);
+     $col3[]=$row["h3"];
+     //print_r($col3);
+     $col4[]=$row["h4"];
+     $col5[]=$row["h5"];
+     $col6[]=$row["h6"];
+     $col7[]=$row["h7"];
+     $col8[]=$row["h8"];
+    }}
+    else{
+     $tablename=$_SESSION["ttval"];
+     echo($tablename);
+    }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
