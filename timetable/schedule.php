@@ -260,7 +260,7 @@
                 </li>
                 <li>
                     <a href="grievance.php">Grievance</a>
-                    
+
                 </li>
                 <li>
                     <a href="vote.php">Vote</a>
@@ -273,6 +273,7 @@
                 </li>
             </ul>
         </nav>
+    </header>
     <form action="schedule.php" method="post">
         <table class="center tb styled-table">
             <tr>
@@ -454,7 +455,7 @@
         <br>
         <button type="submit" name="submit" class="main-btn" style="width:200px; position: absolute; top:650px; left:90px">Update</button>
     </form>
-    
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>
