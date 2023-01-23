@@ -1,6 +1,6 @@
 <?php
     require 'config.php';
-
+    session_start();
    if(isset($_POST['submit']))
    {
    /* $a1=$_POST['a'];
@@ -82,9 +82,9 @@
         $count++;
     }
    }
-   $tablename=$_POST["ttvalue"];
-   echo($tablename);
-   $sql="SELECT * from $tablename";
+   //$tablename=$_POST["ttvalue"];
+   //echo($tablename);
+   $sql="SELECT * from CSE5A";
    $result=mysqli_query($conn,$sql);
 
    while($row=$result->fetch_assoc()){
