@@ -29,7 +29,6 @@ if (!empty($_SESSION["tid"])) {
     <link rel="stylesheet" href="css/navbarstyle.css">
     <style>
         a {
-
             font-size: 50px;
             color: #08528a;
         }
@@ -37,7 +36,6 @@ if (!empty($_SESSION["tid"])) {
 </head>
 
 <body style="background-color:#ebeef1;">
-
     <header style="position:absolute; top:0px;">
         <a href="index1.php">
             <div class="logo">MCE Portal</div>

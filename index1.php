@@ -19,6 +19,7 @@ else{
     <link rel="stylesheet" href="css/preloginstyle.css">
     <link rel="stylesheet" href="css/loginstyle.css">
     <link rel="stylesheet" href="css/navbarstyle.css">
+    <link rel="stylesheet" href="images/index.css">
     
   </head>
   <body>
@@ -52,9 +53,45 @@ else{
             </ul>
         </nav>
     </header>
+    <h1 style="position:absolute; margin-top:140px; margin-left:810px;">Welcome <?php echo $row["Name"]; ?></h1> 
     <div class="container">
-      <h1>Welcome <?php echo $row["Name"]; ?></h1> 
+      <div class="card-container">
+        <a href="studttfetch.php">
+            <div class="card-base card-one">
+            <div class="img-one"></div>
+            <div class="side-btn btn-base btn-one">
+                <P>Schedule</P>
+            </div>
+            <div class="content">
+                Check your Class Time Table 
+            </div>
+            </div>
+        </a>
+        <a href="grievance.php">
+            <div class="card-base card-two">
+                <div class="img-two"></div>
+                <div class="side-btn btn-base btn-one">
+                    <P>Grievance</P>
+                </div>
+                <div class="content">
+                    Report any Grievance or Feedback 
+                </div>
+            </div>
+        </a>
+        <a href="vote.php">
+            <div class="card-base card-three">
+                <div class="img-three"></div>
+                <div class="side-btn btn-base btn-one">
+                    <P>Voting</P>
+                </div>
+                <div class="content">
+                    Vote for Public Grievances/Feedback posted by others 
+                </div>
+            </div>
+        </a>
     </div>
+    </div>
+    
     
     <script src="js/navbar.js"></script>
   </body>
