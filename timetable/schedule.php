@@ -251,16 +251,15 @@
             <div class="line"></div>
         </div>
         <nav class="nav-bar">
-            <ul style="position:absolute; right:40px; top: 20px;">
+            <ul>
                 <li>
                     <a href="index1.php">Home</a>
                 </li>
                 <li>
-                    <a href="timetable\studttfetch.php"  class="active">Schedule</a>
+                    <a href="studttfetch.php">Schedule</a>
                 </li>
                 <li>
                     <a href="grievance.php">Grievance</a>
-
                 </li>
                 <li>
                     <a href="vote.php">Vote</a>

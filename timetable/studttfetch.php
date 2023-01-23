@@ -118,8 +118,8 @@ while ($row = $result->fetch_assoc()) {
 </head>
 
 <body>
-    <header>
-        <div class="logo">MCE Portal</div>
+<header>
+      <a href="index1.php"><div class="logo">MCE Portal</div></a>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -128,20 +128,23 @@ while ($row = $result->fetch_assoc()) {
         <nav class="nav-bar">
             <ul>
                 <li>
-                    <a href="" class="active">Home</a>
+                    <a href="index1.php">Home</a>
                 </li>
                 <li>
-                    <a href="">Schedule</a>
+                    <a href="studttfetch.php" class="active">Schedule</a>
                 </li>
                 <li>
-                    <a href="grievance.php">Grievance</a>
+                    <a href="C:\xampp\htdocs\MiniProj1\grievance.php">Grievance</a>
+                </li>
+                <li>
+                    <a href="vote.php">Vote</a>
                 </li>
                 <li>
                     <a href="">About</a>
                 </li>
-                <!-- <li>
-                    <a href="">Link 4</a>
-                </li> -->
+                <li>
+                    <a href="logout.php">LOGOUT</a>
+                </li>
             </ul>
         </nav>
     </header>
