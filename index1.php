@@ -22,8 +22,8 @@ else{
     
   </head>
   <body>
-  <header>
-      <div class="logo">MCE Portal</div>
+    <header>
+      <a href="index1.php"><div class="logo">MCE Portal</div></a>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -32,13 +32,16 @@ else{
         <nav class="nav-bar">
             <ul>
                 <li>
-                    <a href="" class="active">Home</a>
+                    <a href="index1.php" class="active">Home</a>
                 </li>
                 <li>
-                    <a href="">Schedule</a>
+                    <a href="timetable\studttfetch.php">Schedule</a>
                 </li>
                 <li>
                     <a href="grievance.php">Grievance</a>
+                </li>
+                <li>
+                    <a href="vote.php">Vote</a>
                 </li>
                 <li>
                     <a href="">About</a>

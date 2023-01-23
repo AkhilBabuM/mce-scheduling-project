@@ -2,7 +2,7 @@
 require 'config.php';
 session_start();
 if(!empty($_SESSION["usn"])){
-  header("Location: index1.php");
+  header("Location: lscheduleview.php");
 }
 if(isset($_POST["submit"])){
   $tid = $_POST["tid"];
@@ -73,7 +73,7 @@ if(isset($_POST["submit"])){
       <div class="card">
         <div class="inner-box">
           <div class="card-front">
-            <h2>LOGIN</h2>
+            <h2>ADMIN LOGIN</h2>
             <form class="" action="" method="post" autocomplete="off">
               
               <input type="text" name="tid" id="tid" class="input-box" placeholder="Enter your TID" > <br>
@@ -83,7 +83,7 @@ if(isset($_POST["submit"])){
               <button type="submit" class="main-btn" name="submit">SUBMIT</button>
 
               <a href="registration.php">
-                <button type="button" class="side-btn" onclick="registration.php">REGISTER</button>
+                <button type="button" class="side-btn" onclick="lregistration.php">REGISTER</button>
               </a>
 
             </form>

@@ -83,6 +83,7 @@
     }
    }
    if(!empty($_SESSION["ttval"])){
+
    $tablename=$_SESSION["ttval"];
    $sql="SELECT * from $tablename";
    $result=mysqli_query($conn,$sql);
@@ -105,6 +106,7 @@
     echo($tablename);
    }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 

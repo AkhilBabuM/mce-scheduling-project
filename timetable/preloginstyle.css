@@ -1,0 +1,151 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width:100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background: #ebeef1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+h2{
+    color:#08375c;
+}
+
+.inner-box{
+    position: relative;
+    width: 100%;
+    height:100%
+}
+
+.card-front{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 66px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    backface-visibility:hidden;
+}
+
+.card h2{
+    font-weight: normal;
+    font-size: 29px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.input-box{
+    width:100%;
+    background:transparent;
+    border: transparent;
+    box-shadow: inset 5px 5px 5px -1px rgba(10, 99, 169, 0.16),
+                inset -5px -5px 5px -1px rgba(255, 255, 255, 0.70); 
+    margin: 8px 0;
+    height: 39px;
+    border-radius: 24px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    outline:none;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+
+::placeholder{
+    color:#9ba8b3;
+    font-size:15px;
+}
+
+.disabled_option{
+    color:#9ba8b3;
+    font-size:15px;
+}
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #5c6664;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    cursor:pointer;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    line-height: 3;
+    overflow: hidden;
+    color:#9ba8b3;
+ }
+ 
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #0075cf;
+    top:7px;
+ }
+
+button{
+    width:100%;
+    border:transparent;
+    margin: 42px 0 2px;
+    height: 39px;
+    font-size: 15px;
+    border-radius: 24px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    outline:none;
+    box-shadow:  5px 5px 5px -1px rgba(10, 99, 169, 0.16),
+                -5px -5px 5px -1px rgba(255, 255, 255, 0.70); 
+    cursor: pointer;
+}
+
+th{
+    background-color:#0075cf33;
+}
+.main-btn{
+    background: #08528a;
+    color:#ffffff;
+}
+
+.main-btn:hover{
+    box-shadow: inset 5px 5px 5px -1px rgba(5, 48, 78, 0.596),
+    inset -5px -5px 5px -1px rgba(255, 255, 255, 0.205);
+}
+
+.side-btn{
+    background: transparent;
+    color:#08375c;
+}
+
+.side-btn:hover{
+    box-shadow: inset 5px 5px 5px -1px rgba(5, 48, 78, 0.192),
+                inset -5px -5px 5px -1px rgba(255, 255, 255, 0.671);
+}
+

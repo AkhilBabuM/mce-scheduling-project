@@ -1,24 +1,24 @@
 <?php
 require 'config.php';
 session_start();
-if(!empty($_SESSION["tid"])){
-$sql="SELECT * from lecturerinfo";
-$result=mysqli_query($conn,$sql);
-while($row = $result->fetch_assoc()){
-$class=explode(',',$row["lectureclass"]);
-if(isset($_POST["submit"])){
-    
-   
-    $_SESSION["ttval"]=$_POST["ttval"];
-    $value=$_SESSION["ttval"];
-    header("Location: schedule.php");
-}
-}
-#print_r($class);
+
+if (!empty($_SESSION["tid"])) {
+    $sql = "SELECT * from lecturerinfo";
+    $result = mysqli_query($conn, $sql);
+    while ($row = $result->fetch_assoc()) {
+        $class = explode(',', $row["lectureclass"]);
+        if (isset($_POST["submit"])) {
+            $_SESSION["ttval"] = $_POST["ttval"];
+            $value = $_SESSION["ttval"];
+            header("Location: schedule.php");
+        }
+    }
+    #print_r($class);
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,15 +28,21 @@ if(isset($_POST["submit"])){
     <link rel="stylesheet" href="css/loginstyle.css">
     <link rel="stylesheet" href="css/navbarstyle.css">
     <style>
-        a{
+        a {
+
             font-size: 50px;
             color: #08528a;
         }
     </style>
 </head>
+
 <body>
-<header style="position:absolute; top:0px;">
-      <a href="index1.php"><div class="logo">MCE Portal</div></a>
+
+    <header style="position:absolute; top:0px;">
+        <a href="index1.php">
+            <div class="logo">MCE Portal</div>
+        </a>
+
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -68,9 +74,10 @@ if(isset($_POST["submit"])){
     <div class="links card" style="text-align:center;  margin-top:300px; margin-left:40%;"></div>
 </body>
 <script>
-    var classinfo=new Array();
-    classinfo=<?= json_encode($class) ?>;
+    var classinfo = new Array();
+    classinfo = <?= json_encode($class) ?>;
     console.log(classinfo);
+
     var parentelement=document.querySelector(".links");
     for(let i=0;i<classinfo.length;i++)
     {   
@@ -80,6 +87,7 @@ if(isset($_POST["submit"])){
         <!--<a href="schedule.php" onclick="opentt(classinfo[${i}])">${classinfo[i]}</a>-->
         <input type="hidden" name="ttval" value="${classinfo[i]}">
         <button type="submit" name="submit" >${classinfo[i]}</button>
+
         </form>`;
         parentelement.appendChild(divelement);
     }
@@ -87,7 +95,10 @@ if(isset($_POST["submit"])){
         sessionStorage.setItem("timetable",tt);
         console.log(name);
     }*/
+
    /* var session = '<?php echo json_encode($_SESSION['ttval']) ?>';
     alert(session);*/
+
 </script>
+
 </html>

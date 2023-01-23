@@ -39,32 +39,26 @@ if(isset($_POST["submit"])){
     
   </head>
   <body>
-    <header>
-      <div class="logo">MCE Portal</div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <nav class="nav-bar">
-            <ul>
-                <li>
-                    <a href="" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="">Schedule</a>
-                </li>
-                <li>
-                    <a href="grievance.php">Grievance</a>
-                </li>
-                <li>
-                    <a href="">About</a>
-                </li>
-                <!-- <li>
-                    <a href="">Link 4</a>
-                </li> -->
-            </ul>
-        </nav>
+    <header style="z-index:3;">
+      <a href="login.php"><div class="logo">MCE Portal</div></a>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="" class="active">Login</a>
+                    </li>
+                    <li>
+                        <a href="registration.php">Register</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                </ul>
+            </nav>
     </header>
     <div class="container">
       <div class="card">
@@ -90,5 +84,6 @@ if(isset($_POST["submit"])){
         </div>
       </div>
     </div>
+    <script src="js/navbar.js"></script>
   </body>
 </html>

@@ -76,7 +76,7 @@ if(isset($_POST["submit"])){
       <div class="card">
         <div class="inner-box">
           <div class="card-front">
-            <h2>REGISTRATION</h2>
+            <h2>LECTURER<BR>REGISTRATION</h2>
             <form class="" action="" method="post" autocomplete="off">
 
               <input type="text" name="name" id="name" class="input-box" placeholder="Enter your Name" required value=""> <br>
@@ -88,7 +88,7 @@ if(isset($_POST["submit"])){
               <!-- <input type="text" name="branch" id="branch" class="input-box" placeholder="Enter Branch (eg. CSE)" required value=""> <br> -->
 
 
-              <input type="text" name="lecture" id="lecturing" class="input-box" placeholder="Enter the classes you are teaching(eg:cse3a)" required value=""> <br>
+              <input type="text" name="lecture" id="lecturing" class="input-box" placeholder="Classes (eg:cse3a,cse5c)" required value=""> <br>
               
               
               <input type="password" name="password" id="password" class="input-box" placeholder="Password" required value=""> <br>
@@ -98,7 +98,7 @@ if(isset($_POST["submit"])){
               <button type="submit" class="main-btn" name="submit">SUBMIT</button>
 
               <a href="login.php">
-                <button type="button" class="side-btn" onclick="login.php">GO TO LOGIN</button>
+                <button type="button" class="side-btn" onclick="llogin.php">GO TO LOGIN</button>
               </a>
             </form>
             <br>
